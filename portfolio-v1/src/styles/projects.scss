@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+// 24px --> 1.72vw
+//310px --> 22.7vw
+
+$font-amiko: 'Amiko', sans-serif;
+$font-roboto-mono: 'Roboto Mono', monospace;
+$font-roboto: 'Roboto', sans-serif;
+
+$color-default: #00FFF0;
+$color-phrase: #CCD6F6;
+
+.PR--container {
+    width: 100%;
+    height: 90vw;
+    align-items: center;
+}
+
+.PR--divider {
+    text-align: center;
+    margin: 0 6.7vw;
+
+    hr {
+        margin-top: 5.7vw;
+        border: 0;
+        border-top: 5px solid #47618A;
+        border-radius: 10px;
+    }
+    p {
+        font-family: $font-roboto-mono;
+        font-weight: 500;
+        font-size: 3.44vw;
+        color: white;
+    }
+}
+
+.PR--cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 8vw;
+    grid-row-gap: 3vw;
+    justify-items: center;
+}

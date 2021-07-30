@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap');
+
+$font-amiko: 'Amiko', sans-serif;
+$font-roboto: 'Roboto Mono', monospace;
+
+$color-default: #00FFF0;
+
+.NB--container {
+    height: 70px;
+    width: 100%;
+    top: 50%;
+}
+
+.NB--inner_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.NB--home {
+    .NB--home__sub {
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        font-family: $font-roboto;
+        font-size: 1.2vw;
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: $color-default; 
+        border: 2px solid $color-default;
+        border-radius: 10px;
+        padding: 8px;
+    }
+
+    .NB--home__translate {
+        margin-left: 3vw;
+    }
+
+    .NB--home__translate :hover {
+        cursor: pointer;
+    }
+}
+
+.NB--navigation {
+    nav {
+        display: flex;
+    }
+
+    a {
+        font-family: $font-amiko;
+        font-size: 1.2vw;
+        margin: 0 2vw;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        justify-items: center;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    .NB--navigation__items {
+        display: flex;
+        align-items: center;
+    }
+
+    p {
+        padding-left: 1rem;
+    }
+}
+
