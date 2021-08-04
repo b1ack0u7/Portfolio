@@ -13,8 +13,8 @@ export default function projects() {
                     <Grid item xs>
                         <hr className="PR--divider__bar" />
                     </Grid>
-                    <Grid item xs={4}>
-                        <p>Projects</p>
+                    <Grid item>
+                        <p style={{width: "395px"}}>Projects</p>
                     </Grid>
                     <Grid item xs>
                         <hr className="PR--divider__bar" />
@@ -22,10 +22,14 @@ export default function projects() {
                 </Grid>
             </div>
 
-            <div className="PR--cards">
-                {Projects.map(({ title, subtitle, status, statusID, techs }, i) => (
-                    <PCards title={title} subtitle={subtitle} status={status} statusID={statusID} techs={techs} />
-                ))}
+            <div style={{margin: "0 40px"}}>
+                <Grid container justifyContent="center" spacing={2}>
+                    {Projects.map(({ title, subtitle, status, statusID, techs }, i) => (
+                        <Grid item>
+                            <PCards title={title} subtitle={subtitle} status={status} statusID={statusID} techs={techs} />
+                        </Grid>
+                    ))}
+                </Grid>
             </div>
         </div> 
     )

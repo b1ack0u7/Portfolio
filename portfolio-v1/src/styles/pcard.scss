@@ -13,8 +13,8 @@ $color-default: #00FFF0;
 $color-content: #A2A9C2;
 
 .PC--container {
-    width: 25.63vw;
-    height: 25.63vw;
+    width: 350px;
+    height: 350px;
 }
 
 .PC--icons {
@@ -29,47 +29,46 @@ $color-content: #A2A9C2;
 }
 
 .PC--text {
-    margin-left: 0.5vw;
-    margin-top: -0.6vw;
+margin-top: -12px;
 
-    h1, p {
+    h1, h2 {
         font-family: $font-roboto-mono;
         font-weight: normal;
     }
 
     h1 {
-        font-size: 2.49vw;
+        font-size: 34px;
         height: 2.99vw;
         color: white;
     }
 
-    p {
-        font-size: 1.32vw;
-        height: 5.64vw;
+    h2 {
+        font-size: 18px;
+        height: 90px;
         color: $color-content;
-        margin-top: -0.4vw;
+        margin-top: -10px;
     }
 }
 
 .PC--status {
     text-align: center;
     svg {
-        height: 3.3vw;
+        height: 35px;
     }
     h1 {
-        margin-top: -0.2vw;
+        margin-top: 2px;
     }
 }
 
 .PC--techs {
     display: flex;
     justify-content: space-between;
-    margin: 0 1vw;
+    margin: 0 10px;
     margin-top: -0.5vw;
 
     p {
         font-weight: 300;
-        font-size: 1.03vw;
+        font-size: 14px;
         color: $color-content;
     }
 }

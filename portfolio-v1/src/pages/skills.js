@@ -85,8 +85,8 @@ export default function skills() {
                     <Grid item xs>
                         <hr className="SK--divider__bar" />
                     </Grid>
-                    <Grid item xs={4}>
-                        <p>My skills</p>
+                    <Grid item xs>
+                        <p style={{width: "395px"}}>My skills</p>
                     </Grid>
                     <Grid item xs>
                         <hr className="SK--divider__bar" />
@@ -94,24 +94,24 @@ export default function skills() {
                 </Grid>
             </div>        
 
-            <div>
-                <Grid container justifyContent="center">
+            <div className="SK--items">
+                <Grid container justifyContent="center" spacing={3}>
                     <Grid item>
                         <SCards title={title[0]} desc={desc[0]} subtitle={subtitle} techs={techs[0]} icon={icons[0]} loop={0}/>
                     </Grid> 
-                    <Grid item style={{padding: "0 2.93vw"}}>
+
+                    <Grid item>
                         <SCards title={title[1]} desc={desc[1]} subtitle={subtitle} techs={techs[1]} icon={icons[1]} loop={1}/>
                     </Grid> 
+
                     <Grid item>
                         <SCards title={title[2]} desc={desc[2]} subtitle={subtitle} techs={techs[2]} icon={icons[2]} loop={2}/>
                     </Grid> 
-                </Grid>
 
-                <Grid container style={{justifyContent: "center", paddingTop: "3.66vw"}}>
                     <Grid item>
                         <SCards title={title[3]} desc={desc[3]} subtitle={subtitle} techs={techs[3]} icon={icons[3]} loop={3}/>
                     </Grid> 
-                </Grid>
+                </Grid>                
             </div>
         </div>
     )

@@ -22,11 +22,11 @@ export default function icons(props) {
       return <img src={CSS} alt={props.name}/>
 
     case "PHP":
-      return <img style={{marginTop: "0.65vw"}} src={PHP} alt={props.name}/>
+      return <img style={{marginTop: "9px"}} src={PHP} alt={props.name}/>
     case "MySQL":
-      return <img style={{marginTop: "0.35vw"}} src={MySQL} alt={props.name}/>
+      return <img style={{marginTop: "6px"}} src={MySQL} alt={props.name}/>
     case "JavaScript":
-      return <img style={{marginTop: "0.2vw"}} src={JavaScript} alt={props.name}/>
+      return <img style={{marginLeft: "7px", marginTop: "5px"}} src={JavaScript} alt={props.name}/>
 
     case "Swift":
       return <img src={Swift} alt={props.name}/>
@@ -40,7 +40,7 @@ export default function icons(props) {
       return <img src={Git} alt={props.name}/>
 
     case "SwiftUI":
-      return <img style={{marginTop: "0.5vw"}}  src={SwiftUI} alt={props.name}/>
+      return <img style={{marginTop: "6px"}}  src={SwiftUI} alt={props.name}/>
 
     default:
       return " "

@@ -52,7 +52,7 @@ module.exports = {
             subtitle: 'Test',
             status: 'Upcoming',
             statusID: 0,
-            techs: ['React', 'Gatsby', 'GraphQL']
+            techs: ['React', 'GatsbyJS', 'GraphQL']
         }
     ]
 }
