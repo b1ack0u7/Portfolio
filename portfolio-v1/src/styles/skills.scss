@@ -29,7 +29,13 @@ $color-phrase: #CCD6F6;
         border-top: 5px solid #47618A;
         border-radius: 10px;
     }
+
     p {
+        width: 395px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
         font-family: $font-roboto-mono;
         font-weight: 500;
         font-size: 48px;
@@ -38,5 +44,38 @@ $color-phrase: #CCD6F6;
 }
 
 .SK--items {
-    margin: 0 40px;
+    margin: 0 105px;
+}
+
+//Iphone 12
+@media only screen and (min-width: 390px) and (max-width: 767px) { 
+    .SK--container {
+        height: 330px;
+        margin-bottom: 100px;
+    }
+
+    .SK--divider {
+        margin: 0 20px;
+
+        hr {
+            margin-top: 29px;
+            border-top: 3px solid #47618A;
+        }
+
+        p {
+            width: 130px;
+            font-size: 18px;
+        }
+    }
+
+    .SK--items {
+        margin: 0 0;
+    }
+}
+
+//Ipads
+@media only screen and (min-width: 834px) and (max-width: 1112px)  { 
+    .SK--items {
+        margin: 0 0;
+    }
 }

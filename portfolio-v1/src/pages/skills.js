@@ -86,7 +86,7 @@ export default function skills() {
                         <hr className="SK--divider__bar" />
                     </Grid>
                     <Grid item xs>
-                        <p style={{width: "395px"}}>My skills</p>
+                        <p>My skills</p>
                     </Grid>
                     <Grid item xs>
                         <hr className="SK--divider__bar" />

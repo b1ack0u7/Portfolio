@@ -13,37 +13,38 @@ $color-phrase: #CCD6F6;
 
 .HM--container {
     width: 100%;
-    height: 55vw;
+    height: 1000px;
     align-items: center;
 }
 
 .HM--container_about {
     width: 60%;
+    height: 600px;
 
     p, h2, h3 {
         font-family: $font-roboto-mono;
     }
 
     p {
-        font-size: 1.76vw;
+        font-size: 24px;
         color: #00FFF0;
 
     }
 
     h1 {
         font-family: $font-roboto;
-        font-size: 3.52vw;
+        font-size: 48px;
         color: #CCD6F6;
     }
 
     h2 {
-        font-size: 3.52vw;
+        font-size: 48px;
         font-weight: bold;
         color: #8C96B8;
     }
 
     h3 {
-        font-size: 1.76vw;
+        font-size: 24px;
         font-weight: bold;
         color: #8C96B8;
     }
@@ -51,11 +52,55 @@ $color-phrase: #CCD6F6;
 
 .HM--container_phrase {
     text-align: center;
-    width: 47vw;
+    width: 570px;
 
     p {
         font-family: $font-roboto-mono;
-        font-size: 2.58vw;
+        font-size: 36px;
         color: $color-phrase;
+    }
+}
+
+//Iphone 12
+@media only screen and (min-width: 390px) and (max-width: 767px) { 
+    .HM--container {
+        height: 550px;
+    }
+
+    .HM--container_about {
+        height: 300px;
+        width: 100%;
+        text-align: center;
+
+        p {
+            font-size: 12px;
+        }
+
+        h1, h2 {
+            font-size: 18px;
+        }
+
+        h3 {
+            font-size: 14px;
+            width: 80%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .HM--container_phrase {
+        p {
+            width: 300px;
+            font-size: 18px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        svg {
+            width: 60px;
+            height: 70px;
+        }
     }
 }

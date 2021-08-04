@@ -14,7 +14,7 @@ export default function projects() {
                         <hr className="PR--divider__bar" />
                     </Grid>
                     <Grid item>
-                        <p style={{width: "395px"}}>Projects</p>
+                        <p>Projects</p>
                     </Grid>
                     <Grid item xs>
                         <hr className="PR--divider__bar" />
@@ -22,10 +22,10 @@ export default function projects() {
                 </Grid>
             </div>
 
-            <div style={{margin: "0 40px"}}>
+            <div className="PR--items">
                 <Grid container justifyContent="center" spacing={2}>
                     {Projects.map(({ title, subtitle, status, statusID, techs }, i) => (
-                        <Grid item>
+                        <Grid key={i.toString()} item>
                             <PCards title={title} subtitle={subtitle} status={status} statusID={statusID} techs={techs} />
                         </Grid>
                     ))}

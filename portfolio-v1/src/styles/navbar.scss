@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap');
 
 $font-amiko: 'Amiko', sans-serif;
-$font-roboto: 'Roboto Mono', monospace;
+$font-roboto-mono: 'Roboto Mono', monospace;
+$font-roboto: 'Roboto', sans-serif;
 
 $color-default: #00FFF0;
 
 .NB--container {
     height: 70px;
     width: 100%;
-    top: 50%;
 }
 
 .NB--inner_container {
@@ -26,8 +26,8 @@ $color-default: #00FFF0;
     }
 
     a {
-        font-family: $font-roboto;
-        font-size: 1.2vw;
+        font-family: $font-roboto-mono;
+        font-size: 15px;
         font-weight: 300;
         letter-spacing: 2px;
         text-decoration: none;
@@ -53,10 +53,9 @@ $color-default: #00FFF0;
 
     a {
         font-family: $font-amiko;
-        font-size: 1.2vw;
+        font-size: 20px;
         margin: 0 2vw;
         text-decoration: none;
-        text-transform: uppercase;
         color: white;
         justify-items: center;
         &:last-child {
@@ -74,3 +73,34 @@ $color-default: #00FFF0;
     }
 }
 
+//Iphone 12
+@media only screen and (min-width: 390px) and (max-width: 767px) {
+    .NB--container {
+        height: 40px;
+    }
+
+    .NB--home {
+        a {
+            font-size: 8px;
+            border-radius: 7px;
+        }
+    }
+
+    .NB--home__translate {
+        svg {
+            height: 15px;
+            width: 17px;
+        }
+    }
+
+    .NB--navigation {
+        a {
+            font-size: 10px;
+        }
+
+        svg {
+            height: 15px;
+            width: 15px;
+        }
+    }
+}
