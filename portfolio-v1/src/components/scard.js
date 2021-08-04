@@ -75,7 +75,7 @@ function Desktop(props) {
         <div className="SC--container" style={{height: props.loop === 3 ? "355px" : ""}}>
             <div className="SC--inner-container">
                 <div style={{paddingTop: "6px"}}>
-                    <h1 style={{color: "red"}}>{props.title}</h1>
+                    <h1>{props.title}</h1>
                     {props.icon}
 
                     <div className="SC--desc" style={{marginTop: "-5px", height: props.loop === 3 ? "50px" : ""}}>
@@ -97,30 +97,28 @@ function Mobile(props) {
     return (
         <div className="SC--container">
             <div className="SC--inner-container">
-                <div>
-                    <h1>{props.title}</h1>
+                <h1>{props.title}</h1>
 
-                    <div className="SC--desc">
-                        <h2>{props.desc}</h2>
-                    </div>
-
-                    <Grid container style={{padding: "0 10px"}}>
-                        {props.techs.map((res, i) => (
-                            <Grid key={i.toString()} item xs>
-                                <Icon name={res}/>
-                            </Grid>
-                        ))}
-                    </Grid>
+                <div className="SC--desc">
+                    <h2>{props.desc}</h2>
                 </div>
+
+                <Grid container style={{padding: "0 10px"}}>
+                    {props.techs.map((res, i) => (
+                        <Grid key={i.toString()} item xs>
+                            <Icon name={res}/>
+                        </Grid>
+                    ))}
+                </Grid>
             </div>
         </div>
     );
 }
 
 export default function scard(passed) {
-    const { height, width } = typeof window !== `undefined` ? GetDimensions() : [100,390] ;
+    const { height, width } = typeof window !== `undefined` ? GetDimensions() : [100,390];
 
-    if(width <= 390) {
+    if(width <= 391) {
         return (
             <Mobile title={passed.title} desc={passed.desc} subtitle={passed.subtitle} techs={passed.techs} icon={passed.icon} loop={passed.loop}/>
         );
