@@ -75,7 +75,7 @@ function Desktop(props) {
         <div className="SC--container" style={{height: props.loop === 3 ? "355px" : ""}}>
             <div className="SC--inner-container">
                 <div style={{paddingTop: "6px"}}>
-                    <h1>{props.title}</h1>
+                    <h1 style={{color: "red"}}>{props.title}</h1>
                     {props.icon}
 
                     <div className="SC--desc" style={{marginTop: "-5px", height: props.loop === 3 ? "50px" : ""}}>
