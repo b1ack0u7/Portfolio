@@ -67,7 +67,7 @@ function Platform(inherited) {
             </MobileOnlyView>
 
             <BrowserView>
-                <ScardBrowser title={inherited.title} desc={inherited.desc} subtitle={inherited.subtitle} techs={inherited.techs} icon={inherited.icon} loop={inherited.loop}/>
+                <ScardMobile title={inherited.title} desc={inherited.desc} subtitle={inherited.subtitle} techs={inherited.techs} icon={inherited.icon} loop={inherited.loop}/>
             </BrowserView>
         </div>
     );
