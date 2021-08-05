@@ -12,7 +12,7 @@ $font-roboto: 'Roboto', sans-serif;
 $color-default: #00FFF0;
 $color-phrase: #CCD6F6;
 
-.SC--container {
+.SCB--container {
     width: 310px;
     height: 520px;
     border-radius: 35px;
@@ -21,7 +21,7 @@ $color-phrase: #CCD6F6;
     text-align: center;
 }
 
-.SC--inner-container {
+.SCB--inner-container {
     height: 100%;
     padding: 0 34px;
 
@@ -49,11 +49,11 @@ $color-phrase: #CCD6F6;
     }
 }
 
-.SC--desc{
+.SCB--desc{
     height: 117px;
 }
 
-.SC--AUX {
+.SCB--AUX {
     display: flex;
     width: 193px;
     height: 38px;
@@ -71,7 +71,7 @@ $color-phrase: #CCD6F6;
 
 //Iphone 12
 @media only screen and (min-width: 390px) and (max-width: 767px) {
-    .SC--container {
+    .SCB--container {
         width: 130px;
         height: 120px;
         border-radius: 10px;
