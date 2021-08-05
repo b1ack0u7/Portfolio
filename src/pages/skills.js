@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
-import SCards from "../components/scard"
+import SCards from "../components/scards"
 import { Skills } from "../data"
 
 import "../styles/skills.scss"

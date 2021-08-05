@@ -1,11 +1,8 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
 import Icon from "../components/icons"
-import { isMobileOnly } from "react-device-detect";
 
 import "../styles/scard.scss"
-
-//npm: devices detect resource: https://www.npmjs.com/package/react-device-detect
 
 function AUXscard(inherited) {
     return (
@@ -19,7 +16,8 @@ function AUXscard(inherited) {
     )
 }
 
-function VariantsDesktop(inherited) {
+function TechsVariantsDesktop(inherited) {
+    {/* Techs */}
     switch (inherited.loop) {
         case 2:
             return (
@@ -72,7 +70,7 @@ function VariantsDesktop(inherited) {
     }
 }
 
-function Desktop(props) {
+export default function scardBrowser(props) {
     return (
         <div className="SC--container" style={{height: props.loop === 3 ? "355px" : ""}}>
             <div className="SC--inner-container">
@@ -88,45 +86,9 @@ function Desktop(props) {
 
                     <hr/>
 
-                    <VariantsDesktop techs={props.techs} loop={props.loop} />
+                    <TechsVariantsDesktop techs={props.techs} loop={props.loop} />
                 </div>
             </div>
         </div>
-    );
-}
-
-function Mobile(props) {
-    return (
-        <div className="SC--container">
-            <div className="SC--inner-container">
-                <h1>{props.title}</h1>
-
-                <div className="SC--desc">
-                    <h2>{props.desc}</h2>
-                </div>
-
-                <Grid container style={{padding: "0 10px"}}>
-                    {props.techs.map((res, i) => (
-                        <Grid key={i.toString()} item xs>
-                            <Icon name={res}/>
-                        </Grid>
-                    ))}
-                </Grid>
-            </div>
-        </div>
-    );
-}
-
-export default function scard(passed) {
-    if(isMobileOnly) {
-        return (
-            <Mobile title={passed.title} desc={passed.desc} subtitle={passed.subtitle} techs={passed.techs} icon={passed.icon} loop={passed.loop}/>
-        );
-    }
-    
-    else {
-        return (
-            <Desktop title={passed.title} desc={passed.desc} subtitle={passed.subtitle} techs={passed.techs} icon={passed.icon} loop={passed.loop}/>
-        );
-    }
+    )
 }
