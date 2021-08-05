@@ -14,7 +14,9 @@ export default function scard(passed) {
     
     else {
         return (
-            <ScardBrowser title={passed.title} desc={passed.desc} subtitle={passed.subtitle} techs={passed.techs} icon={passed.icon} loop={passed.loop}/>
+            <div>
+                Is browser
+            </div>
         );
     }
 }
