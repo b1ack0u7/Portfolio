@@ -1,11 +1,7 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
+import SCards from "../components/scards"
 import { Skills } from "../data"
-import { MobileOnlyView, BrowserView } from "react-device-detect"
-
-import ScardBrowser from "../components/scardBrowser"
-import ScardMobile from "../components/scardMobile"
-import Test from "../pages/test"
 
 import "../styles/skills.scss"
 
@@ -59,20 +55,6 @@ const icons = [
 </svg>
 ]
 
-function Platform(inherited) {
-    return (
-        <div>
-            <MobileOnlyView>
-                <Test title={inherited.title} desc={inherited.desc} techs={inherited.techs}/>
-            </MobileOnlyView>
-
-            <BrowserView>
-                <ScardMobile title={inherited.title} desc={inherited.desc} subtitle={inherited.subtitle} techs={inherited.techs} icon={inherited.icon} loop={inherited.loop}/>
-            </BrowserView>
-        </div>
-    );
-}
-
 export default function skills() {
     return (
         <div className="SK--container">
@@ -94,7 +76,7 @@ export default function skills() {
                 <Grid container justifyContent="center" spacing={3}>
                     {Skills.map(({ title, desc, subtitle, techs }, i) => (
                         <Grid key={i.toString()} item>
-                            <Platform title={title} desc={desc} subtitle={subtitle} techs={techs} icon={icons[i]} loop={i}/>
+                            <SCards title={title} desc={desc} subtitle={subtitle} techs={techs} icon={icons[i]} loop={i}/>
                         </Grid>
                     ))}
                 </Grid>                
