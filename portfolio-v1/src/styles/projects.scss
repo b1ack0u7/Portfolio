@@ -72,7 +72,16 @@ $color-phrase: #CCD6F6;
     }
 }
 
-@media only screen and (min-width: 834px) and (max-width: 1112px)  { 
+//Ipads
+@media only screen and (min-width: 834px) and (orientation: portrait) { 
+    .PR--divider {
+        margin: 0 60px;
+        
+        p {
+            width: 310px;
+        }
+    }
+
     .PR--items {
         margin: 0 0;
     }

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
 import SCards from "../components/scard"
+import { Skills } from "../data"
 
 import "../styles/skills.scss"
 
@@ -54,29 +55,6 @@ const icons = [
 </svg>
 ]
 
-const title= [
-    'Design / Front End',
-    'Back End',
-    'Others',
-    'Mobile'
-]
-
-const desc=[
-    'Design is essential as it gives a personality to your application.',
-    'It is the backstage process where the magic happens.',
-    'Other noteworthy skills',
-    'Be anywhere'
-]
-
-const subtitle = 'Languages & Tools'
-
-const techs = [
-    ['Figma', 'HTML', 'CSS'],
-    ['PHP', 'MySQL', 'JavaScript'],
-    ['Swift', 'Python', 'C++', 'Git', 'Bash'],
-    ['SwiftUI']
-]
-
 export default function skills() {
     return (
         <div className="SK--container">
@@ -96,21 +74,11 @@ export default function skills() {
 
             <div className="SK--items">
                 <Grid container justifyContent="center" spacing={3}>
-                    <Grid item>
-                        <SCards title={title[0]} desc={desc[0]} subtitle={subtitle} techs={techs[0]} icon={icons[0]} loop={0}/>
-                    </Grid> 
-
-                    <Grid item>
-                        <SCards title={title[1]} desc={desc[1]} subtitle={subtitle} techs={techs[1]} icon={icons[1]} loop={1}/>
-                    </Grid> 
-
-                    <Grid item>
-                        <SCards title={title[2]} desc={desc[2]} subtitle={subtitle} techs={techs[2]} icon={icons[2]} loop={2}/>
-                    </Grid> 
-
-                    <Grid item>
-                        <SCards title={title[3]} desc={desc[3]} subtitle={subtitle} techs={techs[3]} icon={icons[3]} loop={3}/>
-                    </Grid> 
+                    {Skills.map(({ title, desc, subtitle, techs }, i) => (
+                        <Grid key={i.toString()} item>
+                            <SCards title={title} desc={desc} subtitle={subtitle} techs={techs} icon={icons[i]} loop={i}/>
+                        </Grid>
+                    ))}
                 </Grid>                
             </div>
         </div>

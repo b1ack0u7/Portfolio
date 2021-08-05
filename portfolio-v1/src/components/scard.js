@@ -1,9 +1,11 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
 import Icon from "../components/icons"
-import GetDimensions from "../components/hooks/useWindowDimensions"
+import { isMobileOnly } from "react-device-detect";
 
 import "../styles/scard.scss"
+
+//npm: devices detect resource: https://www.npmjs.com/package/react-device-detect
 
 function AUXscard(inherited) {
     return (
@@ -116,13 +118,12 @@ function Mobile(props) {
 }
 
 export default function scard(passed) {
-    const { height, width } = typeof window !== `undefined` ? GetDimensions() : [100,390];
-
-    if(width <= 391) {
+    if(isMobileOnly) {
         return (
             <Mobile title={passed.title} desc={passed.desc} subtitle={passed.subtitle} techs={passed.techs} icon={passed.icon} loop={passed.loop}/>
         );
     }
+    
     else {
         return (
             <Desktop title={passed.title} desc={passed.desc} subtitle={passed.subtitle} techs={passed.techs} icon={passed.icon} loop={passed.loop}/>

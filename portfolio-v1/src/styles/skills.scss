@@ -44,7 +44,7 @@ $color-phrase: #CCD6F6;
 }
 
 .SK--items {
-    margin: 0 105px;
+    margin: 0 115px;
 }
 
 //Iphone 12
@@ -74,7 +74,19 @@ $color-phrase: #CCD6F6;
 }
 
 //Ipads
-@media only screen and (min-width: 834px) and (max-width: 1112px)  { 
+@media only screen and (min-width: 834px) and (orientation: portrait) { 
+    .SK--container {
+        height: 1350px;
+    }
+
+    .SK--divider {
+        margin: 0 60px;
+        
+        p {
+            width: 310px;
+        }
+    }
+
     .SK--items {
         margin: 0 0;
     }
