@@ -2,15 +2,15 @@ import React from 'react'
 import { Grid } from '@material-ui/core'
 import Icon from "./icons"
 
-import "../styles/scard.scss"
+import "../styles/scardMobile.scss"
 
 export default function scardMobile(props) {
     return (
-        <div className="SC--container">
-            <div className="SC--inner-container">
+        <div className="SCM--container">
+            <div className="SCM--inner-container">
                 <h1>{props.title}</h1>
 
-                <div className="SC--desc">
+                <div className="SCM--desc">
                     <h2>{props.desc}</h2>
                 </div>
 

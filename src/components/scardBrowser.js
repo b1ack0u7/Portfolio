@@ -2,11 +2,11 @@ import React from 'react'
 import { Grid } from '@material-ui/core'
 import Icon from "../components/icons"
 
-import "../styles/scard.scss"
+import "../styles/scardBrowser.scss"
 
 function AUXscard(inherited) {
     return (
-        <div className="SC--AUX" style={{width: inherited.loop === 3 ? "100%" : "", justifyContent: inherited.loop === 3 ? "center" : ""}}>
+        <div className="SCB--AUX" style={{width: inherited.loop === 3 ? "100%" : "", justifyContent: inherited.loop === 3 ? "center" : ""}}>
             <div style={{paddingRight: "15px"}}>
                 <Icon name={inherited.tech}/>
             </div>
@@ -17,7 +17,6 @@ function AUXscard(inherited) {
 }
 
 function TechsVariantsDesktop(inherited) {
-    {/* Techs */}
     switch (inherited.loop) {
         case 2:
             return (
@@ -72,13 +71,13 @@ function TechsVariantsDesktop(inherited) {
 
 export default function scardBrowser(props) {
     return (
-        <div className="SC--container" style={{height: props.loop === 3 ? "355px" : ""}}>
-            <div className="SC--inner-container">
+        <div className="SCB--container" style={{height: props.loop === 3 ? "355px" : ""}}>
+            <div className="SCB--inner-container">
                 <div style={{paddingTop: "6px"}}>
                     <h1>{props.title}</h1>
                     {props.icon}
 
-                    <div className="SC--desc" style={{marginTop: "-5px", height: props.loop === 3 ? "50px" : ""}}>
+                    <div className="SCB--desc" style={{marginTop: "-5px", height: props.loop === 3 ? "50px" : ""}}>
                         <h2>{props.desc}</h2>
                     </div>
 
