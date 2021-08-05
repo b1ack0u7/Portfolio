@@ -4,18 +4,18 @@ import Icon from "./icons"
 
 import "../styles/scardMobile.scss"
 
-export default function scardMobile(props) {
+export default function scardMobile(propsM) {
     return (
         <div className="SCM--container">
             <div className="SCM--inner-container">
-                <h1>{props.title}</h1>
+                <h1>{propsM.title}</h1>
 
                 <div className="SCM--desc">
-                    <h2>{props.desc}</h2>
+                    <h2>{propsM.desc}</h2>
                 </div>
 
                 <Grid container style={{padding: "0 10px"}}>
-                    {props.techs.map((res, i) => (
+                    {propsM.techs.map((res, i) => (
                         <Grid key={i.toString()} item xs>
                             <Icon name={res}/>
                         </Grid>

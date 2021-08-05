@@ -69,23 +69,23 @@ function TechsVariantsDesktop(inherited) {
     }
 }
 
-export default function scardBrowser(props) {
+export default function scardBrowser(propsB) {
     return (
-        <div className="SCB--container" style={{height: props.loop === 3 ? "355px" : ""}}>
+        <div className="SCB--container" style={{height: propsB.loop === 3 ? "355px" : ""}}>
             <div className="SCB--inner-container">
                 <div style={{paddingTop: "6px"}}>
-                    <h1>{props.title}</h1>
-                    {props.icon}
+                    <h1>{propsB.title}</h1>
+                    {propsB.icon}
 
-                    <div className="SCB--desc" style={{marginTop: "-5px", height: props.loop === 3 ? "50px" : ""}}>
-                        <h2>{props.desc}</h2>
+                    <div className="SCB--desc" style={{marginTop: "-5px", height: propsB.loop === 3 ? "50px" : ""}}>
+                        <h2>{propsB.desc}</h2>
                     </div>
 
-                    <h1 style={{marginTop: "1px"}}>{props.subtitle}</h1>
+                    <h1 style={{marginTop: "1px"}}>{propsB.subtitle}</h1>
 
                     <hr/>
 
-                    <TechsVariantsDesktop techs={props.techs} loop={props.loop} />
+                    <TechsVariantsDesktop techs={propsB.techs} loop={propsB.loop} />
                 </div>
             </div>
         </div>
