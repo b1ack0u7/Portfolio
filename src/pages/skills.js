@@ -62,13 +62,13 @@ const icons = [
 function Platform(inherited) {
     return (
         <div>
-            <BrowserView>
-                <ScardBrowser title={inherited.title} desc={inherited.desc} subtitle={inherited.subtitle} techs={inherited.techs} icon={inherited.icon} loop={inherited.loop}/>
-            </BrowserView>
-
             <MobileOnlyView>
                 <Test title={inherited.title} desc={inherited.desc} techs={inherited.techs}/>
             </MobileOnlyView>
+
+            <BrowserView>
+                <ScardBrowser title={inherited.title} desc={inherited.desc} subtitle={inherited.subtitle} techs={inherited.techs} icon={inherited.icon} loop={inherited.loop}/>
+            </BrowserView>
         </div>
     );
 }
