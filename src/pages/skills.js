@@ -5,6 +5,7 @@ import { MobileOnlyView, BrowserView } from "react-device-detect"
 
 import ScardBrowser from "../components/scardBrowser"
 import ScardMobile from "../components/scardMobile"
+import Test from "../pages/test"
 
 import "../styles/skills.scss"
 
@@ -66,7 +67,7 @@ function Platform(inherited) {
             </BrowserView>
 
             <MobileOnlyView>
-                <ScardMobile title={inherited.title} desc={inherited.desc} techs={inherited.techs}/>
+                <Test title={inherited.title} desc={inherited.desc} techs={inherited.techs}/>
             </MobileOnlyView>
         </div>
     );
