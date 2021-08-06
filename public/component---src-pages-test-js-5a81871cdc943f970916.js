@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[672],{235:function(e,t,a){a.r(t),a.d(t,{default:function(){return r}});var n=a(7294);function r(){return n.createElement("div",{className:"TS--container"},n.createElement("div",{className:"TS--inner-container"},"hola soy una prueba",n.createElement("p",null,"texto aqui")),n.createElement("div",{className:"TS--dev"},n.createElement("h1",null,"texto aca")))}}}]);
-//# sourceMappingURL=component---src-pages-test-js-5a81871cdc943f970916.js.map
