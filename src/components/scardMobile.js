@@ -1,18 +1,17 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
 import Icon from "./icons"
-
-import "../styles/scard.scss"
+import "../styles/scardM.scss"
 
 //npm: devices detect resource: https://www.npmjs.com/package/react-device-detect
 
 export default function ScardMobile(props) {
     return (
-        <div className="SC--container">
-            <div className="SC--inner-container">
+        <div className="SCM--container">
+            <div className="SCM--inner-container">
                 <h1>{props.title}</h1>
     
-                <div className="SC--desc">
+                <div className="SCM--desc">
                     <h2>{props.desc}</h2>
                 </div>
     

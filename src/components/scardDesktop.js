@@ -1,14 +1,13 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
 import Icon from "./icons"
-
-import "../styles/scard.scss"
+import "../styles/scardD.scss"
 
 //npm: devices detect resource: https://www.npmjs.com/package/react-device-detect
 
 function AUXscard(inherited) {
     return (
-        <div className="SC--AUX" style={{width: inherited.loop === 3 ? "100%" : "", justifyContent: inherited.loop === 3 ? "center" : ""}}>
+        <div className="SCD--AUX" style={{width: inherited.loop === 3 ? "100%" : "", justifyContent: inherited.loop === 3 ? "center" : ""}}>
             <div style={{paddingRight: "15px"}}>
                 <Icon name={inherited.tech}/>
             </div>
@@ -73,13 +72,13 @@ function TechsVariantsDesktop(inherited) {
 
 export default function ScardDesktop(props) {
     return (
-        <div className="SC--container" style={{height: props.loop === 3 ? "355px" : ""}}>
-            <div className="SC--inner-container">
+        <div className="SCD--container" style={{height: props.loop === 3 ? "355px" : ""}}>
+            <div className="SCD--inner-container">
                 <div style={{paddingTop: "6px"}}>
                     <h1>{props.title}</h1>
                     {props.icon}
 
-                    <div className="SC--desc" style={{marginTop: "-5px", height: props.loop === 3 ? "50px" : ""}}>
+                    <div className="SCD--desc" style={{marginTop: "-5px", height: props.loop === 3 ? "50px" : ""}}>
                         <h2>{props.desc}</h2>
                     </div>
 

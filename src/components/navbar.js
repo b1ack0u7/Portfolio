@@ -1,11 +1,11 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
-import { Link } from 'gatsby';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 
 import "../styles/navbar.scss"
