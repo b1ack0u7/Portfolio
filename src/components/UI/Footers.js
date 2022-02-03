@@ -21,6 +21,8 @@ export const Footers = () => {
             </div>
 
             <div className='fixed bottom-4 grid justify-items-center gap-4 md:pl-8 2xl:pl-16'>
+                <a className='bx bxl-linkedin text-[25px] text-[#ccd6f6] duration-200 hover:text-[#7feeb6] pb-1' href='https://linkedin.com/in/axel-ricardo-hernández-montes-de-oca-51a024214' target="_blank" rel="noopener noreferrer"/>
+                
                 <a className='bx bxl-github text-[25px] text-[#ccd6f6] duration-200 hover:text-[#7feeb6]' href='https://github.com/b1ack0u7' target="_blank" rel="noopener noreferrer"/>
                 
                 <i className='bi bi-envelope-fill text-[20px] text-[#ccd6f6] cursor-pointer duration-200 hover:text-[#7feeb6]' onClick={copyEmail}/>

@@ -5,8 +5,8 @@ export const Navbar = () => {
     const iconMenu = [
         {id: 0, icon: 'bx-home-alt', target: "#home"},
         {id: 1, icon: 'bx-stats', target: "#stats"},
-        {id: 2, icon: 'bx-book-content', target: "#projects"},
-        {id: 3, icon: 'bx-message-square-dots', target: "#contact"}
+        {id: 2, icon: 'bx-book-content', target: "#projects"}
+        // {id: 3, icon: 'bx-message-square-dots', target: "#contact"}
     ];
 
     return (
@@ -23,7 +23,7 @@ export const Navbar = () => {
             </div>
 
             <nav className='flex justify-center items-center'>
-                <div className='fixed w-[70%] py-5 px-8 bottom-4 backdrop-blur-sm bg-[#50617E]/50 rounded-full md:w-[35%] 2xl:w-[20%]'>
+                <div className='fixed w-[60%] py-5 px-8 bottom-4 backdrop-blur-sm bg-[#50617E]/40 rounded-full md:w-[25%] 2xl:w-[15%]'>
                     <ul className='flex justify-between items-center -mb-2'>
                         {
                             iconMenu.map(item => (

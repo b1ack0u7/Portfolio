@@ -16,7 +16,7 @@ export const Projects = () => {
         <section className='w-full h-full grid place-items-center pb-[6rem] font-[Poppins] px-[1rem] md:px-[8rem]' id='projects'>
             <h1 className='text-[22px] font-semibold mb-5 text-[#a1e7c4] md:text-[28px] 2xl:text-[40px]'>Mis Proyectos</h1>
 
-            <div className='grid gap-4 md:grid-cols-3 md:gap-12 md:gap-y-3 2xl:gap-y-16'>
+            <div className='grid gap-4 md:grid-cols-3 md:gap-12 md:gap-y-3 2xl:gap-y-10 2xl:gap-x-8'>
                 {
                     myProjects.map(item => (
                         <ProjectFragment key={item.title} {...item}/>
