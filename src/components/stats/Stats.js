@@ -1,31 +1,32 @@
 import React from 'react';
+import { iconData } from '../data/DataComponents';
 import { StatsFragment } from './StatsFragment';
 
 export const Stats = () => {
 
     const skills = {
         front: [
-            {name:"HTML", icon:"bx bxl-html5 text-red-400", level:"Intermedio"}, 
-            {name:"CSS", icon:"bx bxl-css3 text-amber-400", level:"Intermedio+"}, 
-            {name:"Tailwind", icon:"bx bxl-tailwind-css text-teal-300", level:"Intermedio+"}, 
-            {name:"JavaScript", icon:"bx bxl-javascript text-[#F8FE2D]", level:"Intermedio"}, 
-            {name:"React", icon:"bx bxl-react text-cyan-400", level:"Intermedio"}
+            {name:"HTML", icon:iconData.html, level:"Intermedio"}, 
+            {name:"CSS", icon:iconData.css, level:"Intermedio+"}, 
+            {name:"Tailwind", icon:iconData.tailwind, level:"Intermedio+"}, 
+            {name:"JavaScript", icon:iconData.javascript, level:"Intermedio"}, 
+            {name:"React", icon:iconData.react, level:"Intermedio"}
         ],
         back: [
-            {name:"SQL", icon:"bx bxs-data", level:"Intermedio"}, 
-            {name:"PHP", icon:"bx bxl-php text-indigo-400", level:"Basico"}, 
-            {name:"Firebase", icon:"bx bxl-firebase text-rose-500", level:"Intermedio"}, 
-            {name:"NodeJS", icon:"bx bxl-nodejs text-green-400", level:"Basico"}
+            {name:"SQL", icon:iconData.sql, level:"Intermedio"}, 
+            {name:"PHP", icon:iconData.php, level:"Basico"}, 
+            {name:"Firebase", icon:iconData.firebase, level:"Intermedio"}, 
+            {name:"NodeJS", icon:iconData.nodejs, level:"Basico"}
         ],
         mobile: [
-            {name:"Swift", icon:"bx bxl-apple text-[#F8BC47]", level:"Avanzado+"}, 
-            {name:"Kotlin", icon:"bx bxl-android text-lime-400", level:"Basico"}
+            {name:"Swift", icon:iconData.swift, level:"Avanzado+"}, 
+            {name:"Kotlin", icon:iconData.kotlin, level:"Basico"}
         ],
         languages: [
-            {name:"Python", icon:"bx bxl-python text-blue-500", level:"Avanzado"}, 
-            {name:"C++", icon:"bx bxl-c-plus-plus text-blue-300", level:"Intermedio"}, 
-            {name:"R", icon:"bx bx-line-chart text-blue-400", level:"Basico"}, 
-            {name:"Shell", icon:"bx bx-terminal", level:"Basico+"}
+            {name:"Python", icon:iconData.python, level:"Avanzado"}, 
+            {name:"C++", icon:iconData.c_plus_plus, level:"Intermedio"}, 
+            {name:"R", icon:iconData.rstudio, level:"Basico"}, 
+            {name:"Shell", icon:iconData.shell, level:"Basico+"}
         ]
     };
 

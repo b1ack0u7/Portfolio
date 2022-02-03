@@ -16,6 +16,11 @@ export const Core = () => {
                     <Stats/>
                     <Projects/>
                 </div>
+
+                <div className='w-full text-center pb-20 font-[Poppins] text-[10px] text-zinc-400 font-light md:text-[14px] md:pb-22'>
+                    <p>Diseñado por mi</p>
+                    <p>ʕ•́ᴥ•̀ʔっ</p>
+                </div>
         </div>
     )
 };
